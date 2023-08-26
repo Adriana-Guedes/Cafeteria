@@ -1,69 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
 
-    <!--  INDICA QUE PODEMOS ADAPTAR O CODIGO A OUTROS DISPOSITIVOS, COMO DISPOSITIVOS MOVEIS -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <!--  DESCRIÇÃO QUE APARECE ABAIXO DO TITULO PESQUISADO NO GOOGLE-->
-    <meta name = "description" content="Um bot que ira moderar e deixar a sua comunidade segura de um jeito fácil!">
-    <link rel="stylesheet" href="./CSS/style.css">
-      <!--ATRIBUTO DEFER FAZ COM QUE O JAVASCRIPT SEJA CARREGADO APÓS O HTML -->
-    <script defer src="./script.js"></script>
+  <!--  INDICA QUE PODEMOS ADAPTAR O CODIGO A OUTROS DISPOSITIVOS, COMO DISPOSITIVOS MOVEIS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--  DESCRIÇÃO QUE APARECE ABAIXO DO TITULO PESQUISADO NO GOOGLE-->
+  <meta name="description" content="Um bot que ira moderar e deixar a sua comunidade segura de um jeito fácil!">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <!--ATRIBUTO DEFER FAZ COM QUE O JAVASCRIPT SEJA CARREGADO APÓS O HTML -->
+  <script defer src="./script.js"></script>
 
 
 
-    <title>Cafeteria</title>
+  <title>Cafeteria</title>
 </head>
+
 <body>
-    <header class="cabecalho">
-        <img class="cabecalho-imagem" src="./imagens/logo.png" alt="logo da comunidade Ballerini">
-        <Button class="hamburger" onclick="menuShow()"></Button>   <!--para a responsividade -->
-        <nav class="cabecalho-menu">
-            <li><a class="cabecalho-menu-item" href="https://discord.gg/wagxzStdcR" target="_blanck">Comunidade Ballerini</a></li>
-            <li><a class="cabecalho-menu-item" href="https://www.youtube.com/watch?v=llF6vD-RljE&t=730s" target="_blanck">Tutorial</a></li>
-            <li><a class="cabecalho-menu-item" href="https://www.youtube.com/watch?v=WVymQIlNpAQ" target="_blanck">Open Source </a></li>
-            <li><a class="cabecalho-menu-item">Comandos</a></li>
-        </nav>
-    </header>
+  <header class="cabecalho">
+    <img class="cabecalho-imagem" src="./imagens/logo.png" alt="logo da comunidade Ballerini">
+    <Button class="hamburger" onclick="menuShow()"></Button> <!--para a responsividade -->
+    <nav class="cabecalho-menu">
+      <li><a class="cabecalho-menu-item" href="/index.html" >HOME</a>
+      </li>
+      <li><a class="cabecalho-menu-item" href="https://www.youtube.com/watch?v=llF6vD-RljE&t=730s"
+          target="_blanck">INSTAGRAM</a></li>
+      <li><a class="cabecalho-menu-item" href="https://www.youtube.com/watch?v=WVymQIlNpAQ" target="_blanck">Open Source
+        </a></li>
+      <li><a class="cabecalho-menu-item">Comandos</a></li>
+    </nav>
+  </header>
 
-    <main class="conteudo"> 
-      <section class="conteudo-principal">
-        <div class="conteudo-principal-escrito">
-            <h1 class="conteudo-principal-escrito-titulo">Bom Grão</h1> <!--Titulo e abaixo subtitulo-->
-            <h2 class="conteudo-principal-escrito-subtitulo" >Cafeteria como vc nunca viu.</h2>
-            <button class="conteudo-principal-escrito-botao"> Me adicione</button>
+  <main class="conteudo">
+    <section class="conteudo-principal">
+      <div class="conteudo-principal-escrito">
+        <h1 class="conteudo-principal-escrito-titulo">Bom Grão</h1> <!--Titulo e abaixo subtitulo-->
+        <h2 class="conteudo-principal-escrito-subtitulo">Mais que café, uma expêriencia.</h2>
+        <button class="conteudo-principal-escrito-botao"> Siga-nos</button>
+      </div>
+
+
+      <!--/* XICARA DE CAFÉ */-->
+      <div class="container">
+        <div class="plate"></div> <!--/* PRATINHO*/-->
+        <div class="cup"> <!--/* XICARA */-->
+          <div class="top">
+
+            <!--/* VAPOR */-->
+            <div class="vapour">
+              <span style="--i:1;"></span>
+              <span style="--i:16;"></span>
+              <span style="--i:2;"></span>
+              <span style="--i:3;"></span>
+              <span style="--i:12;"></span>
+              <span style="--i:6;"></span>
+              <span style="--i:7;"></span>
+              <span style="--i:19;"></span>
+              <span style="--i:8;"></span>
+              <span style="--i:10;"></span>
+              <span style="--i:4;"></span>
+              <span style="--i:13;"></span>
+              <span style="--i:11;"></span>
+              <span style="--i:14;"></span>
+              <span style="--i:15;"></span>
+              <span style="--i:5;"></span>
+              <span style="--i:17;"></span>
+              <span style="--i:9;"></span>
+              <span style="--i:20;"></span>
+              <span style="--i:18;"></span>
+              
+
+
+            </div>
+
+            <div class="circle"><!--/* CONTEUDO DA XICARA*/-->
+              <div class="tea"></div>
+            </div>
+          </div>
+          <div class="handle"></div><!--/* ALÇA DA XICARA */-->
         </div>
-         <!--/* XICARA DE CAFÉ*/-->
-        <div class="container">
-          <div class="cup"></div>
-            <div class="top"></div>
-              <div class="circle"></div>
-                <div class="tea"></div>
-        </div>
+      </div>
     </section>
-    
-    
-      <section class="conteudo-secundario">
-        <h3 class="conteudo-secundario-titulo" >O que ela faz por você</h3>
-        <p class="conteudo-secundario-paragrafo">1. Cria um  <strong> sistema de verificação capcha </strong>para novos membros garantirem que não são robôs</p>
-        <p class="conteudo-secundario-paragrafo">2. Possui um <strong>sistema de banimento </strong> automático para links suspeitos que forem enviados na comunidade</p>
-        <p class="conteudo-secundario-paragrafo">3. <strong>Sistema de avisos e banimento manual, </strong> para pessoas administradoras utilizarem</p>
-
-      </section>
-
-    </main>
 
 
-    <footer class="rodape">  
-        <img class="rodape-imagem" src="./imagens/BALLERINI.png" alt="imagem rodape">
-    </footer>
+    <section class="conteudo-secundario">
+      <h3 class="conteudo-secundario-titulo">Tudo fresco e natural</h3>
+      <p class="conteudo-secundario-paragrafo"> Processo otimizado para que você possa receber um produto freco de qualidade </p>
+      
+
+    </section>
+
+  </main>
 
 
-
-
+  <footer class="rodape">
+    <h2> Assistente de vendas Maria Pereira  </h2>
+  </footer>
 
 
 
 </body>
+
 </html>

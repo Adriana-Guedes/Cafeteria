@@ -15,8 +15,15 @@ font-family: 'Sarala', sans-serif;*/
 /*backgraund degrade*/
 body{
     
-    background-image:  url("../imagens/fundo.jpg");/* deixa o fundo gradiente*/
+    background-image: linear-gradient( to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../imagens/imagem11.png");
     background-size: 100%; /* tamanho de 500 e no eixo y tera 100% */
+    width: 100%;
+    height: 100%;
+    z-index: -1; /*embaixo do conteudo*/
+    background-size: cover; /* quem quebrar a imagem*/
+    background-repeat: no-repeat; /* para não repetir a imagem*/
+    background-position: 50% 0;
+   
    
 }
 
@@ -158,7 +165,7 @@ height: 72px;
         padding: 48px;
         font-family: 'Righteous', cursive;
         font-weight: 400;
-        font-size: 24px;
+        font-size: 40px;
         color: #FFF2EF;
         margin-bottom: 10px;
 
@@ -168,28 +175,53 @@ height: 72px;
 
         font-family: 'Sarala', sans-serif;
         font-weight: 300;
-        font-size: 18px;
-        color: #ECD6C4;
+        font-size: 24px;
+        color: #f9f9f9;
 
     }
 
+    /* traço final */
     .rodape{
-        padding: 32px;
-        border-top: 0.4px solid #FFF2E7; /*um traço na horizontal*/
+        padding: 52px;
+        border-top: 0.5px solid #FFF2E7; /*um traço na horizontal*/
+        margin-top: 200px;
+        width: 100%;   /* tamanho do traço */
 
     }
+
+  
+
+
+    /* texto do footer */
+
+    .rodape h2{
+       color: #f9f9f9;
+       display: flex;
+       justify-content: center;
+      
+       
+    }
+
+    footer{
+        bottom: 0;
+        
+        width: 90%;
+    }
+
+
+    
+    /*///////////////////////// XICARA DE CAFÉ////////////////////////*/
 
     .container{
         position: relative;
-        top: 50px
+        margin-left: 420px;
+        top: 500PX
     }
-
-    /*///////////////////////// XICARA DE CAFÉ////////////////////////*/
+    
     .cup{
         position: relative;
-        z-index: -1;
         width: 280px;
-        height: 300px;
+        height: 250px;
         background: linear-gradient(to right, #f9f9f9, #d9d9d9);
         border-bottom-left-radius: 45%; /*arredonda lado esquerdo baixo*/
         border-bottom-right-radius: 45%; /*arredonda lado direito baixo*/
@@ -199,37 +231,37 @@ height: 72px;
 
     .top{
         position: absolute;
-        top: -25px;
+        top: -30px;
         left: 0;
         width: 100%;
-        height: 60px;
+        height: 70px;
         background: linear-gradient(to right, #f9f9f9, #d9d9d9);
         border-top-left-radius: 45%; /*arredonda lado esquerdo em cima*/
         border-top-right-radius: 45%; /*arredonda lado direito em cima*/
-        overflow: hidden;
-        
         
     }
+    
      /* circulo dentro da xicara, o conteudo*/
     .circle{
         position: absolute;
-        top: -15px;
+        top: 5px;
         left: 10px;
         width: calc(100% - 20px); /*tamanho do circulo interno da xicara*/
         height: 60px;
         background: linear-gradient(to right,  #d1cece, #f3ebeb);
         border-radius: 50%;
         box-sizing: border-box;
-        overflow: hidden;
+        overflow: hidden; /*esconde o café com a borda debaixo da chicara*/
+       
        
         
     }
 
     .tea{
         position: absolute;
-        top: 5px;
+        top: 15px;
         left: 10px;
-        width: calc(100% - 10px); /*tamanho do circulo interno da xicara*/
+        width: calc(100% - 20px); /*tamanho do circulo interno da xicara*/
         height: 60px;
         background: linear-gradient(to right,  #0c0505, #421919);
         border-radius: 50%;
@@ -238,13 +270,120 @@ height: 72px;
 
     }
 
+    /*alça da xicara*/
 
-
-    .rodape-imagem{
-       height: 48px;
-       display: block;/*para centralizar a imagem*/
-       margin: 0 auto;/*para centralizar a imagem*/
+    .handle{
+        position: absolute;
+        right: -70px;
+        top: 30px;
+        width: 160px;
+        height: 180px;
+        border: 25px solid #dcdcdc;
+        border-left: 25px transparent;
+        border-bottom: 25px solid transparent;
+        border-radius: 50%;
+        transform: rotate(42deg);
     }
+
+
+    /*pratinho da xicara*/
+    .plate{
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 500px;
+        height: 200px;
+        background: linear-gradient(to right, #f9f9f9, #e7e7e7);
+        border-radius: 50%; /*arredonda o pratinho*/
+        box-shadow: 0 35px 35px rgba(0, 0, 0, 0);
+    }
+
+ /*profundidade e coloração do pratinho 3D*/
+    
+    .plate::before{
+        content: " ";
+        position: absolute;
+        top: 1px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        border-radius: 50%;
+        background: linear-gradient(to left, #f9f9f9, #e7e7e7);
+    }
+
+
+    .plate::after{
+        content: " ";
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        right: 30px;
+        bottom: 30px;
+         /*efeito muito massa de profundidade 3D*/
+        background: radial-gradient(rgba(0,0,0,0.2) 28%, transparent, transparent); 
+        border-radius: 50%;
+    }
+
+
+    .vapour{
+      position: relative;
+      display: flex;
+      z-index: 1;
+      padding: 0 20px;
+    }
+
+    .vapour span{
+        position: relative;
+        bottom: 50px;
+        display: block;
+        margin: 0 2px 50px;
+        min-width: 8px;
+        height: 120px;
+        background: #fff;
+        border-radius: 50%;
+        animation: animate 5s linear infinite;
+        opacity: 0;
+        filter:blur(8px); /*deixa com o aspecto de fumaça*/
+        animation-delay: calc(var(--i) * -0.5s);
+      }
+
+
+      /*animação com a fumaça subindo */
+      @keyframes animate {
+        0%{
+
+            transform: translateY(0) scaleX(1) ;
+            opacity: 0;
+        }
+        15%{
+            opacity: 1;            
+        }
+        
+        50%{
+
+            transform: translateY(-150px) scaleX(5);
+        }
+        95%{
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(-300px) scaleY(10);
+        }
+      }
+
+    /*///////////////////////// XICARA DE CAFÉ////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+
 
     /*///////=======RESPONSIVIDADE ========\\\\\\\\\\*/
 
