@@ -22,7 +22,7 @@ body{
     z-index: -1; /*embaixo do conteudo*/
     background-size: cover; /* quem quebrar a imagem*/
     background-repeat: no-repeat; /* para não repetir a imagem*/
-    background-position: 50% 0;
+    background-position: 100% ;
    
    
 }
@@ -34,12 +34,15 @@ body{
     flex-direction: row; /* deixa o conteudo da tag na horizontal, reforçando o display flex */
     align-items: center;/*centraliza os itens, nesta caso alinha os itens da nav assim também como o logo*/
     justify-content: space-around;/*gera uma borda nas laterais da classe assim também como um espaçamento entre o logo e a nav*/
-    padding: 24px;
+    padding: 15px;
     
 }
 
 .cabecalho-imagem{
-height: 72px;
+height: 100px;
+border-radius: 200px;
+
+
 
 }
 
@@ -48,14 +51,14 @@ height: 72px;
     gap: 32px;
     list-style: none; /* serve para tirar o pontinho na marcação da nav */
 }
+
 .cabecalho-menu-item{
 
     font-family: 'Sarala', sans-serif;
     color: rgb(247, 238, 232);
     font-weight: 400;
     font-size: 18px;
-    
-    
+
     
 }
 
@@ -92,6 +95,7 @@ height: 72px;
 .conteudo{
     border-top: 0.4px solid #FFF2E7; /* um traço , tamanho, que tipo e cor*/
     margin-bottom: 48px;
+    
 
 }
 
@@ -100,7 +104,7 @@ height: 72px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+   justify-content: space-around;
     
   }
  
@@ -108,7 +112,8 @@ height: 72px;
   .conteudo-principal-escrito{
     display:inline-block;
     flex-direction: column;
-    gap: 32px;
+    gap: 30px;
+    margin-left: 30px;
     
 
 }  
@@ -116,8 +121,9 @@ height: 72px;
     display: flex;
     font-family: 'Righteous', cursive;
     font-weight: 400;
-    font-size: 64px;
+    font-size: 60px;
     color: #FFF2E7;
+    
     
 }
 
@@ -126,7 +132,6 @@ height: 72px;
     font-weight: 400;
     font-size: 24px;
     color: #ECD6C4;
-    margin-top: 20px;
     margin-top: 40px;
    
 }
@@ -154,15 +159,15 @@ height: 72px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap:24px; /* espaçamento entre itens ( entre linhas)*/
-        margin-top: 48px;
+        gap:15px; /* espaçamento entre itens ( entre linhas)*/
+        margin-top: 20px;
 
         
     }
 
     .conteudo-secundario-titulo{
         border-top: 0.4px solid #FFF2E7; /*um traço na horizontal*/
-        padding: 48px;
+        padding: 40px;
         font-family: 'Righteous', cursive;
         font-weight: 400;
         font-size: 40px;
@@ -177,6 +182,7 @@ height: 72px;
         font-weight: 300;
         font-size: 24px;
         color: #f9f9f9;
+        
 
     }
 
@@ -198,7 +204,8 @@ height: 72px;
        color: #f9f9f9;
        display: flex;
        justify-content: center;
-      
+       margin-top: 60px;
+          
        
     }
 
@@ -215,7 +222,9 @@ height: 72px;
     .container{
         position: relative;
         margin-left: 420px;
-        top: 500PX
+        top: 500px;
+        
+        
     }
     
     .cup{
@@ -225,9 +234,11 @@ height: 72px;
         background: linear-gradient(to right, #f9f9f9, #d9d9d9);
         border-bottom-left-radius: 45%; /*arredonda lado esquerdo baixo*/
         border-bottom-right-radius: 45%; /*arredonda lado direito baixo*/
+        margin-left: 110px;
         
         
     }
+    
 
     .top{
         position: absolute;
@@ -258,14 +269,14 @@ height: 72px;
     }
 
     .tea{
-        position: absolute;
+        position: relative;
         top: 15px;
         left: 10px;
         width: calc(100% - 20px); /*tamanho do circulo interno da xicara*/
         height: 60px;
         background: linear-gradient(to right,  #0c0505, #421919);
         border-radius: 50%;
-      
+      overflow: hidden; /*esconde o café com a borda debaixo da chicara*/
         
 
     }
@@ -288,8 +299,8 @@ height: 72px;
 
     /*pratinho da xicara*/
     .plate{
-        position: absolute;
-        bottom: -50px;
+        position: relative; /*porque se absoluto vasa a tela na*/
+        bottom: -290px;
         left: 50%;
         transform: translateX(-50%);
         width: 500px;
@@ -297,6 +308,8 @@ height: 72px;
         background: linear-gradient(to right, #f9f9f9, #e7e7e7);
         border-radius: 50%; /*arredonda o pratinho*/
         box-shadow: 0 35px 35px rgba(0, 0, 0, 0);
+        
+        
     }
 
  /*profundidade e coloração do pratinho 3D*/
@@ -481,6 +494,14 @@ height: 72px;
         
             flex-direction: column;
             text-align: justify;
+
+        }
+        .container{
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
 
         }
 
