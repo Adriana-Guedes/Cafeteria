@@ -447,22 +447,23 @@ border-radius: 200px;
             clip-path:  circle(1500px at 90% -15%);
             pointer-events: all;
         }
-
+        
+        button{
+           margin-bottom: 20px;
+        }
 
         .conteudo-principal {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-top: 20px;
-           
-            
 
         }
 
        
 
         .conteudo-principal-escrito{
-            margin: 10px;
+            margin: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -474,10 +475,6 @@ border-radius: 200px;
         .conteudo-principal-escrito-titulo{
             font-weight: 400;
             font-size: 40px;
-        }
-
-        .conteudo-secundario{
-            margin-top: -300px;
         }
 
         .conteudo-principal-escrito-subtitulo{
@@ -495,6 +492,11 @@ border-radius: 200px;
 
 
 
+        .conteudo-secundario-titulo{
+            font-size: 38px;
+         
+        }
+
         .conteudo-secundario-paragrafo{
     
             margin: 0px  20px  0px  20px;
@@ -502,22 +504,32 @@ border-radius: 200px;
             flex-direction: column;
             text-align: center;
             font-size: 25px;
+           
 
         }
 
-        .conteudo-secundario-titulo{
-            font-size: 38px;
-        }
+       
+
+
+        .rodape h2{
+            color: #f9f9f9;
+            display: flex;
+            text-align: center;
+            
+               
+            
+         }
 
         
         
         .container{
-            margin: 10px;
+            margin: -150px;
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            margin-top: -60px;
+            margin-top: -50px;
+           
             
 
         }
@@ -527,26 +539,31 @@ border-radius: 200px;
           
           
             position: relative;
-            width: 250px;
-            height: 250px;
-            margin-left: 19px;   
+            width: 170px;
+            height: 170px;
+            margin-left: 19px; 
+        
                 
         }
         
-        .rodape h2{
-            color: #f9f9f9;
-            display: flex;
-            text-align: center;
-            margin-top: 200px;
-               
-            
-         }
+       
         
     
            /*pratinho da xicara*/
        .plate{
-    
-        width: 400px;
+        content: " ";
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        right: 30px;
+        bottom: 30px;
+         /*efeito muito massa de profundidade 3D*/
+        background: radial-gradient(rgba(0,0,0,0.3) 26%, transparent, transparent); 
+        border-radius: 50%;
+        width: 350px;
+        margin-top: 20px;
+        margin-left: 70px;  /*ajuste do prato*/
+        
       
         
        }
@@ -555,11 +572,17 @@ border-radius: 200px;
     /*alça da xicara*/
 
     .handle{
-        right: -50px;
-       
+        position: absolute;
+        right: -40px;
+        top: 30px;
+        width: 100px;
+        height: 100px;
         border: 25px solid #dcdcdc;
         border-left: 25px transparent;
         border-bottom: 25px solid transparent;
+
+        
+     
       
     }
 
