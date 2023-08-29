@@ -188,9 +188,9 @@ border-radius: 200px;
 
     /* traço final */
     .rodape{
-        padding: 52px;
+        padding: 60px;
         border-top: 0.5px solid #FFF2E7; /*um traço na horizontal*/
-        margin-top: 200px;
+        margin-top: 300px;
         width: 100%;   /* tamanho do traço */
 
     }
@@ -276,7 +276,7 @@ border-radius: 200px;
         height: 60px;
         background: linear-gradient(to right,  #0c0505, #421919);
         border-radius: 50%;
-      overflow: hidden; /*esconde o café com a borda debaixo da chicara*/
+        overflow: hidden; /*esconde o café com a borda debaixo da chicara*/
         
 
     }
@@ -412,11 +412,11 @@ border-radius: 200px;
             left: 0;
             width: 100vw;
             height: 100vh;
-            background: linear-gradient(to left, #2f2325 ,#523338, #704a41, #2f2325 ); /* deixa o fundo gradiente*/
-            background-size: 400% 100%; /* tamanho de 500 e no eixo y tera 100% / proporção do degrade*/
+            background: linear-gradient(to left, #4f3f35 ,#866a56, #a38068, #a38068 ); /* deixa o fundo gradiente*/
+            background-size: 300% 50%; /* tamanho de 500 e no eixo y tera 100% / proporção do degrade*/
             animation: degrade-animado 6s infinite alternate ; /* chamando a animação de novo do background*/
             /*mascara em formato de circulo*/
-            clip-path: circle(100px  at 90% -15%); /*cirulo que se espandira ao clicar no menu*/ /* -15% na posisão y, eleva o circulo pra cima*/
+            clip-path: circle(100px  at 90% -19%); /*cirulo que se espandira ao clicar no menu*/ /* -15% na posisão y, eleva o circulo pra cima*/
             transition: 1s ease-out; /*para fazer a transição suave*/
 
 
@@ -453,6 +453,8 @@ border-radius: 200px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-top: 20px;
+           
             
 
         }
@@ -471,9 +473,12 @@ border-radius: 200px;
 
         .conteudo-principal-escrito-titulo{
             font-weight: 400;
-            font-size: 45px;
+            font-size: 40px;
         }
 
+        .conteudo-secundario{
+            margin-top: -300px;
+        }
 
         .conteudo-principal-escrito-subtitulo{
             font-weight: 400;
@@ -488,24 +493,82 @@ border-radius: 200px;
                      
         }
 
+
+
         .conteudo-secundario-paragrafo{
     
             margin: 0px  20px  0px  20px;
         
             flex-direction: column;
-            text-align: justify;
+            text-align: center;
+            font-size: 25px;
 
         }
+
+        .conteudo-secundario-titulo{
+            font-size: 38px;
+        }
+
+        
+        
         .container{
             margin: 10px;
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
+            margin-top: -60px;
+            
 
         }
 
+
+        .cup{
+          
+          
+            position: relative;
+            width: 250px;
+            height: 250px;
+            margin-left: 19px;   
+                
+        }
+        
+        .rodape h2{
+            color: #f9f9f9;
+            display: flex;
+            text-align: center;
+            margin-top: 200px;
+               
+            
+         }
+        
+    
+           /*pratinho da xicara*/
+       .plate{
+    
+        width: 400px;
+      
+        
+       }
+
+       
+    /*alça da xicara*/
+
+    .handle{
+        right: -50px;
+       
+        border: 25px solid #dcdcdc;
+        border-left: 25px transparent;
+        border-bottom: 25px solid transparent;
+      
     }
-    
-    
+
+
+       
+        
+    }
+
+
+
+
    
